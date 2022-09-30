@@ -70,6 +70,7 @@
     function setLanguage(lang = 'en') {
       localStorage.setItem('lang', lang)
       currLangDom.textContent = lang === 'en' ? 'EN' : '中'
+      document.body.setAttribute('data-lang', lang)
 
       document.querySelectorAll('[data-i18n]').forEach(dom => {
         const key = dom.getAttribute('data-i18n')
