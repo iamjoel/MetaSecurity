@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MetaSecurity</title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Home -->
+    <div class="home" id="home">
+      <div class="header-wrap">
+        <div class="head">
+          <div class="logo">
+            <img src="./assets/imgs/name.svg" alt="MetaSecurity" class="name"/>
+          </div>
+          <div class="head-right">
+            <div class="menu">
+              <a class="menu-item" href="javascript:void(0);" data-to="home" data-i18n="home"></a>
+              <a class="menu-item" href="javascript:void(0);" data-to="product" data-i18n="products"></a>
+              <a class="menu-item menu-item-has-sub" href="javascript:void(0);">
+                <div class="menu-text" data-i18n="team"></div>
+                <div class="sub-menu sub-menu-team">
+                  <div class="sub-menu-item" data-to="about-us" data-i18n="aboutUs"></div>
+                  <div class="sub-menu-item" data-to="team-background" data-i18n="teamBackground"></div>
+                  <div class="sub-menu-item" data-to="investors" data-i18n="investors"></div>
+                </div>
+              </a>
+              <!-- <a class="menu-item" href="javascript:void(0);">Resource</a> -->
+            </div>
+            <div class="lang" id="lang"></div>
+          </div>
+        </div>
+      </div>
+      <!-- main -->
+      <div class="home-main row">
+        <div class="summary">
+          <h1 class="title" title="MetaSecurity"></h1>
+          <h2 class="sub-title"><span>💪🏻 </span> <span data-i18n="slogan"></span></h2>
+          <a class="explore" title="explore" href="javascript:void(0);" data-to="product"><span data-i18n="explore"></span> ↓</a>
+        </div>
+
+        <div class="logo-anim">
+          <video width="400" height="460" autoplay muted>
+            <source src="./assets/vedio/logo.mov"> 
+            <source src="./assets/vedio/logo.mp4" type="video/mp4"> 
+          </video>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Product -->
+    <div class="product" id="product">
+      <div class="row">
+        <div class="product-title" data-i18n="productTitle"></div>
+        <div class="product-des" data-i18n="productDes"></div>
+        <img class="product-img" src="./assets/imgs/product.png" />
+        
+      </div>
+      <div class="product-feature-wrap">
+        <div class="product-feature row">
+          <div class="product-feature-item upload-code">
+            <div class="feature-h1" data-i18n="feature1Title"></div>
+            <div class="feature-h2" data-i18n="feature1Des"></div>
+          </div>
+          <div class="product-feature-item analysis-reports">
+            <div class="feature-h1" data-i18n="feature2Title"></div>
+            <div class="feature-h2" data-i18n="feature2Des"></div>
+          </div>
+          <div class="product-feature-item detection-capability">
+            <div class="feature-h1" data-i18n="feature3Title"></div>
+            <div class="feature-h2" data-i18n="feature3Des"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team -->
+    <div class="team">
+      <div class="about-us" id="about-us">
+        <div class="row">
+          <div class="about-us-title" data-i18n="aboutUs"></div>
+          <div class="about-us-summary" data-i18n="aboutUsSummary">
+          </div>
+          <div class="about-us-content" data-i18n="aboutUsDetail">
+          </div>
+        </div>
+      </div>
+
+      <div class="team-background-wrap" id="team-background">
+        <div class="team-background">
+          <div class="team-title h3" data-i18n="teamBackground"></div>
+          <div class="team-des" data-i18n="teamBackgroundDes"></div>
+          <div class="team-logos">
+            <div class="logo-row">
+              <img src="./assets/imgs/team/google.svg" />
+              <img src="./assets/imgs/team/microsoft.svg" />
+              <img src="./assets/imgs/team/ibm.svg" />
+              <img src="./assets/imgs/team/pennn-state.svg" />
+              <img src="./assets/imgs/team/paloalto.svg" />
+            </div>
+            <div class="logo-row">
+              <img src="./assets/imgs/team/fireeye.svg" />
+              <img src="./assets/imgs/team/jpmorgan.svg" />
+              <img src="./assets/imgs/team/bytedance.svg" />
+              <img src="./assets/imgs/team/illinois.svg" />
+            </div>
+            <div class="logo-row">
+              <img src="./assets/imgs/team/vmware.svg" />
+              <img src="./assets/imgs/team/standford.svg" />
+              <img src="./assets/imgs/team/washington.svg" />
+              <img src="./assets/imgs/team/cornell.svg" />
+              <img src="./assets/imgs/team/wisconsin.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="investors" id="investors">
+        <div class="investors-title h3" data-i18n="investors"></div>
+        <div class="investors-logos">
+          <div class="investors-logo investors-log-aigorand"></div>
+          <div class="investors-logo investors-log-eth"></div>
+          <div class="investors-logo investors-log-polkadot"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- foot -->
+    <footer class="foot">
+      <div class="foot-main row">
+        <div class="foot-left">
+          <div class="foot-logo">
+            <img src="./assets/imgs/name-white.svg" alt="MetaSecurity" class="foot-name"/>
+          </div>
+          <div class="foot-title" data-i18n="slogan"></div>
+        </div>
+        <!-- 等选语言的下拉的设计 -->
+        <!-- <div class="foot-right">
+          <div class="foot-right-item">
+          </div>
+        </div> -->
+      </div>
+      <div class="copyright">
+        <div class="copyright-left">Copyright</div>
+        <div class="copyright-right">2022 all rights reserved</div>
+      </div>
+    </footer>
+  </div>
+  <script src="./assets/i18n/en.js"></script>
+  <script src="./assets/i18n/zh.js"></script>
+  <script src="./assets/index.js"></script>
+</body>
+</html>
