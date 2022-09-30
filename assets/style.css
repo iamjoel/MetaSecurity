@@ -207,6 +207,11 @@ video {
   background-color: #f9dcc6;
 }
 
+[data-lang="zh"] .sub-title::after {
+  left: 124px;
+  width: 195px;
+}
+
 .explore {
   display: inline-flex;
   align-items: center;
