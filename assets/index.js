@@ -60,6 +60,28 @@
     let lang = localStorage.getItem('lang') || 'en'
     const currLangDom = document.getElementById('lang')
 
+    let isShowLangOptions = false
+    const selectDom = document.querySelector('.select')
+    const selectedLangValueDom = document.querySelector('.select-value')
+    const langOptions = document.querySelectorAll('.select-option')
+
+    selectedLangValueDom.addEventListener('click', () => {
+      if(!isShowLangOptions) {
+        selectDom.classList.add('unfold')
+      } else {
+        selectDom.classList.remove('unfold')
+      }
+      isShowLangOptions = !isShowLangOptions
+    })
+
+    langOptions.forEach(dom => {
+      dom.addEventListener('click', e => {
+        setLanguage(dom.getAttribute('data-value'))
+        selectDom.classList.remove('unfold')
+        isShowLangOptions = false
+      })
+    });
+
     setLanguage(lang)
 
     currLangDom.addEventListener('click', () => {
@@ -70,6 +92,8 @@
     function setLanguage(lang = 'en') {
       localStorage.setItem('lang', lang)
       currLangDom.textContent = lang === 'en' ? 'EN' : '中'
+      selectedLangValueDom.textContent = lang === 'en' ? 'English' : '中文'
+
       document.body.setAttribute('data-lang', lang)
 
       document.querySelectorAll('[data-i18n]').forEach(dom => {

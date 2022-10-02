@@ -18,4 +18,5 @@ window.en = {
   aboutUsSummary: 'MetaSecureLabs.io is founded by a top-notch team with wide background including crypto, cyber-security, economics, finance&risk control, cloud software architect, and senior marketing veterans.',
   aboutUsDetail: 'Based on the concept of continuous security threat and risk assessment (CARTA), it focuses on providing data-driven security and trust measurement service for web3 projects, namely Trustworthy as a Service (TaaS). MetaSecureLabs.io, provides continuous and accurate security threat and risk assessment mechanisms in different application scenarios (e.g.,Smart contract, NFT, Protocol, Tokenomics of web3 systems and projects) . We believe that a trustworthy understanding of project semantic (code logic), core data flows (e.g., token txn) and the tokenomic incentive models are the key to help build a true valuable world of stable and secure web3 systems',
   teamBackgroundDes: 'MetaSecureLabs.io: a team from reputable Research Institute, Security Vendors and Web2 Companies',
+  language: 'Language',
 }

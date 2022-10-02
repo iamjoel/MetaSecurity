@@ -24,12 +24,12 @@ video {
 
 @font-face {
   font-family: aliPH;
-  src: url("./font/Alibaba-PuHuiTi-Regular.ttf");
+  src: url(./font/Alibaba-PuHuiTi-Regular.woff2) format("woff2"), url("./font/Alibaba-PuHuiTi-Regular.ttf");
 }
 
 @font-face {
   font-family: aliPHBold;
-  src: url("./font/Alibaba-PuHuiTi-Medium.ttf");
+  src: url(./font/Alibaba-PuHuiTi-Medium.woff2) format("woff2"),url("./font/Alibaba-PuHuiTi-Medium.ttf");
 }
 
 .row {
@@ -42,7 +42,6 @@ video {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-top: 83px;
   height: 810px;
 }
 
@@ -61,11 +60,7 @@ video {
 
 .header-wrap {
   width: 1100px;
-  z-index: 999;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto;
 }
 
 .head {
@@ -105,7 +100,6 @@ video {
   align-items: center;
   margin-right: 46px;
   position: relative;
-  font-family: aliPHBold;
 }
 
 .menu-item:last-child {
@@ -121,6 +115,7 @@ video {
   background: url(./imgs/arrow.svg) no-repeat;
   background-size: contain;
 }
+
 
 .menu-text {
   height: 83px;
@@ -170,7 +165,6 @@ video {
   font-size: 12px;
   border: 2px solid #000;
   border-radius: 4px;
-  font-family: aliPHBold;
   cursor: pointer;
 }
 
@@ -445,6 +439,11 @@ video {
   background-size: 220px 78px;
 }
 
+.investors-log-w3f {
+  background-image: url(./imgs/investor/w3f.png);
+  background-size: 180px 70px;
+}
+
 .investors-log-eth {
   background-image: url(./imgs/investor/eth.svg);
   background-size: 314px 65px;
@@ -465,6 +464,7 @@ video {
   display: flex;
   align-items: center;
   height: 260px;
+  justify-content: space-between;
 }
 
 .foot-logo {
@@ -485,6 +485,76 @@ video {
   margin-top: 13px;
   font-size: 16px;
   line-height: 23px;
+}
+
+.select-wrap {
+  width: 160px;
+}
+
+.foot-right-item-title {
+  padding-bottom: 11px;
+  margin-bottom: 11px;
+  font-size: 16px;
+  font-family: aliPHBold;
+  line-height: 23px;
+  border-bottom: 1px solid #fff;
+}
+
+.select {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.select-value,
+.select-option {
+  height: 32px;
+  line-height: 32px;
+  padding-left: 12px;
+  font-size: 12px;
+}
+
+.select-value {
+  position: relative;
+  border: 1px solid #D9D9D9;
+  border-radius: 2px;
+}
+
+.select-value::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 12px;
+  height: 100%;
+  width: 14px;
+  background: url(./imgs/select-arrow.svg) center center no-repeat;
+  background-size: 12px 8px;
+  /* transition: transform .1s ease-in-out; */
+} 
+
+
+.select-options {
+  display: none;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #fff;
+  color: rgba(0, 0, 0, .85);
+  border-radius: 2px;
+}
+
+.unfold .select-options {
+  display: block;
+}
+
+.unfold .select-value::after {
+  transform: rotate(180deg);
+}
+
+.select-option:hover {
+  background-color: #F8F8F8;
 }
 
 .copyright {

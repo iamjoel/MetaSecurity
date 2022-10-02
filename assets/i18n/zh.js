@@ -12,10 +12,11 @@ window.zh = {
   feature1Title: '便捷的代码上传方式',
   feature1Des: '上传代码文件进行代码分析',
   feature2Title: '完整的分析报告',
-  feature2Des: '输出所有检测结果，包括漏洞代码本地化',
+  feature2Des: '输出所有检测结果，包括漏洞代码定位',
   feature3Title: '完备的检测能力',
   feature3Des: '覆盖大部分智能合约SWC漏洞',
   aboutUsSummary: 'MetaSecureLabs.io 由一支拥有广泛背景的顶尖团队创立，包括加密、网络安全、经济、金融和风险控制、云软件架构师和资深营销资深人士。',
   aboutUsDetail: '基于持续安全威胁和风险评估（CARTA）的理念，专注于为web3项目提供数据驱动的安全和信任度量服务，即Trustworthy as a Service（TaaS）。 MetaSecureLabs.io，在不同的应用场景（如智能合约、NFT、协议、web3系统和项目的通证经济学）中提供持续准确的安全威胁和风险评估机制。 我们相信，对项目语义（代码逻辑）、核心数据流（例如代币 txn）和代币激励模型的可靠理解是帮助建立一个真正有价值的稳定和安全 web3 系统世界的关键',
   teamBackgroundDes: 'MetaSecureLabs.io：团队成员来自知名研究所、安全供应商和 Web2 公司',
+  language: '语言',
 }
