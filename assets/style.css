@@ -187,18 +187,28 @@ video {
   position: relative;
   margin: 0;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
 }
 
-.sub-title::after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  left: 150px;
-  top: -3px;
-  height: 35px;
-  width: 214px;
+.sub-title strong {
   background-color: #f9dcc6;
+}
+
+.en-slogan,
+.zh-slogan {
+  display: none;
+  align-items: center;
+  height: 100%;
+}
+
+[data-lang="zh"] .zh-slogan{
+  display: flex;
+}
+
+[data-lang="en"] .en-slogan{
+  display: flex;
 }
 
 [data-lang="zh"] .sub-title::after {
