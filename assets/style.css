@@ -100,6 +100,7 @@ video {
   align-items: center;
   margin-right: 46px;
   position: relative;
+  cursor: pointer;
 }
 
 .menu-item:last-child {
@@ -145,7 +146,13 @@ video {
   width: 180px;
 }
 
+.sub-menu-resource {
+  left: -21px;
+  width: 121px;
+}
+
 .sub-menu-item {
+  display: block;
   padding-left: 15px;
   height: 48px;
   line-height: 48px;
@@ -190,10 +197,6 @@ video {
   line-height: 35px;
   display: flex;
   align-items: center;
-}
-
-.sub-title strong {
-  background-color: #f9dcc6;
 }
 
 .en-slogan,
@@ -495,6 +498,44 @@ video {
   margin-top: 13px;
   font-size: 16px;
   line-height: 23px;
+}
+
+.foot-right {
+  display: flex;
+}
+
+.resource-wrap {
+  margin-right: 64px;
+  width: 189px;
+}
+
+.resource-list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resource-item {
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  background: 0 center no-repeat;
+  padding-left: 24px;
+}
+
+.resource-item-twitter {
+  background-image: url(./imgs/twitter.svg);
+  background-size: 16px 14px;
+}
+
+.resource-item-telegram {
+  background-image: url(./imgs/telegram.png);
+  background-size: 16px 16px;
+}
+
+.resource-item-mail {
+  background-image: url(./imgs/mail.svg);
+  background-size: 16px 16px;
 }
 
 .select-wrap {
