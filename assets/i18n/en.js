@@ -9,7 +9,7 @@ window.en = {
   slogan: 'Building a Trustworthy Web3 World',
   explore: 'Explore',
   productTitle: 'Automatic security scanning of CodingWiz smart contract bug, vulnerability, compiling issue',
-  productDes: 'Automate the smart contract bug, vulnerability, compiling issue scanning and help identify vulnerabilities and suggest the fix.',
+  productDes: 'Automate the smart contract bug, vulnerability, compiling issue scanning and help identify web3 infrastructure vulnerabilities and suggest the fix.',
   feature1Title: 'Convenient code upload method',
   feature1Des: 'Upload code file for code analysis',
   feature2Title: 'Complete analysis reports',

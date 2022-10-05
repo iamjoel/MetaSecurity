@@ -9,7 +9,7 @@ window.zh = {
   slogan: '构建一个值得信赖的 Web3 世界',
   explore: '探索',
   productTitle: '对智能合约bug、漏洞、编译问题的自动安全扫描',
-  productDes: '自动对您的智能合约代码进行安全检测，识别漏洞并帮助开发人员定位易受攻击的代码并提出修复建议。',
+  productDes: '自动化智能合约错误、漏洞、编译问题扫描，帮助识别 web3 基础设施漏洞并提出修复建议。',
   feature1Title: '便捷的代码上传方式',
   feature1Des: '上传代码文件进行代码分析',
   feature2Title: '完整的分析报告',
