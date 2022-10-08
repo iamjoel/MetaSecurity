@@ -449,19 +449,19 @@ video {
 }
 
 .team-logo-jpmorgan {
-  width: 306px;
+  width: 296px;
   background-image: url(./imgs/team/jpmorgan.svg?v=221008) ; 
   background-size: 286px 54px;
 }
 
 .team-logo-bytedance {
-  width: 244px;
+  width: 234px;
   background-image: url(./imgs/team/bytedance.svg?v=221008) ; 
   background-size: 214px 38px;
 }
 
 .team-logo-illinois {
-  width: 166px;
+  width: 186px;
   background-image: url(./imgs/team/illinois.svg?v=221008) ; 
   background-size: 146px 39px;
 }
