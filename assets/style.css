@@ -32,6 +32,11 @@ video {
   src: url(./font/Alibaba-PuHuiTi-Medium.woff2) format("woff2"),url("./font/Alibaba-PuHuiTi-Medium.ttf");
 }
 
+@font-face {
+  font-family: aliPHLight;
+  src: url(./font/Alibaba-PuHuiTi-Light.ttf) format("woff2"),url("./font/Alibaba-PuHuiTi-Medium.ttf");
+}
+
 .row {
   margin: 0 auto;
   width: 1100px;
@@ -197,6 +202,7 @@ video {
   line-height: 35px;
   display: flex;
   align-items: center;
+  font-family: aliPHLight;
 }
 
 .en-slogan,
@@ -243,8 +249,9 @@ video {
 }
 
 .logo-anim {
-  width: 400px;
-  height: 460px;
+  position: relative;
+  /* 右对齐 */
+  left: 131px;
 }
 
 .logo-anim  img{
@@ -264,7 +271,7 @@ video {
   margin-bottom: 20px;
   font-family: aliPHBold;
   font-weight: 700;
-  font-size: 46px;
+  font-size: 40px;
   line-height: 67px;
 }
 
@@ -272,6 +279,7 @@ video {
   margin-bottom: 45px;
   font-size: 24px;
   line-height: 35px;
+  font-family: aliPHLight;
 }
 
 .product-img {
@@ -347,6 +355,8 @@ video {
 
 .about-us-summary::before,
 .about-us-summary::after{
+  position: relative;
+  top: 18px;
   font-family: aliPHBold;
   font-size: 46px;
   line-height: 35px;
@@ -425,8 +435,39 @@ video {
   height: 86px;
 }
 
+.team-logo {
+  height: 86px;
+  background: center center no-repeat;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.team-logo-fireeye {
+  width:  190px;
+  background-image: url(./imgs/team/fireeye.svg?v=221008) ; 
+  background-size: 170px 63px;
+}
+
+.team-logo-jpmorgan {
+  width: 306px;
+  background-image: url(./imgs/team/jpmorgan.svg?v=221008) ; 
+  background-size: 286px 54px;
+}
+
+.team-logo-bytedance {
+  width: 244px;
+  background-image: url(./imgs/team/bytedance.svg?v=221008) ; 
+  background-size: 214px 38px;
+}
+
+.team-logo-illinois {
+  width: 166px;
+  background-image: url(./imgs/team/illinois.svg?v=221008) ; 
+  background-size: 146px 39px;
+}
+
 .investors {
-  margin: 240px auto;
+  margin: 320px auto;
   width: 1155px;
 }
 
