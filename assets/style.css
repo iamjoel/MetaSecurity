@@ -105,6 +105,7 @@ video {
   align-items: center;
   margin-right: 46px;
   position: relative;
+  z-index: 2;
   cursor: pointer;
 }
 
