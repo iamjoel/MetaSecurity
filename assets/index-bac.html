@@ -7,8 +7,7 @@
   <meta name="keyword" content="web3, smart contract security scan"/>
   <meta name="description" content="freemium smart contract security scan"/>
   <title>MetaSecurity</title>
-  <link rel="stylesheet" href="./assets/vendor/iSlider.css">
-  <link rel="stylesheet" href="./assets/style.css?v=221013">
+  <link rel="stylesheet" href="./assets/style.css?v=221010">
   <link rel="stylesheet" href="./assets/mobile.style.css" media="screen and (max-width: 540px)" >
 </head>
 <body>
@@ -21,7 +20,7 @@
             <img src="./assets/imgs/name.svg" alt="MetaSecurity" class="name"/>
           </div>
           <div class="head-right">
-            <div class="menu pc">
+            <div class="menu m-hide">
               <a class="menu-item" href="javascript:void(0);" data-to="home" data-i18n="home"></a>
               <a class="menu-item" href="javascript:void(0);" data-to="product" data-i18n="products"></a>
               <a class="menu-item menu-item-has-sub" href="javascript:void(0);">
@@ -42,29 +41,6 @@
               </div>
             </div>
             <div class="lang" id="lang"></div>
-            <div class="mobile-menu mobile">
-              <div class="menu-handle"></div>
-              <div class="mobile-menu-list">
-                <a class="mobile-menu-item" href="javascript:void(0);" data-to="home" data-i18n="home"></a>
-                <a class="mobile-menu-item" href="javascript:void(0);" data-to="product" data-i18n="products"></a>
-                <a class="mobile-menu-item mobile-menu-item-has-sub unfold" href="javascript:void(0);">
-                  <div class="mobile-menu-text" data-i18n="team"></div>
-                  <div class="mobile-sub-menu">
-                    <div class="mobile-sub-menu-item" data-to="about-us" data-i18n="aboutUs"></div>
-                    <div class="mobile-sub-menu-item" data-to="team-background" data-i18n="teamBackground"></div>
-                    <div class="mobile-sub-menu-item" data-to="investors" data-i18n="investors"></div>
-                  </div>
-                </a>
-                <div class="mobile-menu-item mobile-menu-item-has-sub unfold" href="javascript:void(0);">
-                  <div class="mobile-menu-text" data-i18n="resource"></div>
-                  <div class="mobile-sub-menu">
-                    <a class="mobile-sub-menu-item" href="https://twitter.com/cleanini" target="_blank">Twitter</a>
-                    <a class="mobile-sub-menu-item" href="https://t.me/metaSecure" target="_blank">Telegram</a>
-                    <a class="mobile-sub-menu-item mobile-sub-menu-item-last" href="mailto:info@metasecurelabs.io" target="_blank">Email</a>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -77,27 +53,26 @@
             <div class="en-slogan">Building a&nbsp;<strong>Trustworthy Web3&nbsp;</strong>World</div>
             <div class="zh-slogan">构建一个<strong>值得信赖的 Web3&nbsp;</strong>世界</div>
           </h2>
-          <a class="explore pc" title="explore" href="javascript:void(0);" data-to="product"><span data-i18n="explore"></span> ↓</a>
+          <a class="explore m-hide" title="explore" href="javascript:void(0);" data-to="product"><span data-i18n="explore"></span> ↓</a>
         </div>
 
-        <div class="logo-anim">
-          <video autoplay muted>
-            <source src="./assets/vedio/logo.webm" type="video/webm">
-            <source src="./assets/vedio/logo.mp4" type="video/mp4">
-            <source src="./assets/vedio/logo.mov">
+        <div class="logo-anim m-hide">
+          <video width="600" height="660" autoplay muted>
+            <source src="./assets/vedio/logo.mov"> 
           </video>
         </div>
       </div>
     </div>
-
+    
     <!-- Product -->
     <div class="product" id="product">
       <div class="row">
         <div class="product-title" data-i18n="productTitle"></div>
         <div class="product-des" data-i18n="productDes"></div>
         <img class="product-img" src="./assets/imgs/product.png" />
+        
       </div>
-      <div class="product-feature-wrap pc">
+      <div class="product-feature-wrap">
         <div class="product-feature row">
           <div class="product-feature-item upload-code">
             <div class="feature-h1" data-i18n="feature1Title"></div>
@@ -113,10 +88,6 @@
           </div>
         </div>
       </div>
-      <div class="product-feature-viewport-wrap mobile">
-        <div class="product-feature-viewport" id="product-slide">
-        </div>
-      </div>
     </div>
 
     <!-- Team -->
@@ -126,8 +97,8 @@
           <div class="about-us-title" data-i18n="aboutUs"></div>
           <div class="about-us-summary" data-i18n="aboutUsSummary">
           </div>
-          <!-- <div class="about-us-content" data-i18n="aboutUsDetail">
-          </div> -->
+          <div class="about-us-content" data-i18n="aboutUsDetail">
+          </div>
         </div>
       </div>
 
@@ -135,7 +106,7 @@
         <div class="team-background">
           <div class="team-title h3" data-i18n="teamBackground"></div>
           <div class="team-des" data-i18n="teamBackgroundDes"></div>
-          <div class="team-logos pc">
+          <div class="team-logos">
             <div class="logo-row">
               <img src="./assets/imgs/team/google.svg" />
               <img src="./assets/imgs/team/microsoft.svg" />
@@ -156,53 +127,24 @@
               <img src="./assets/imgs/team/washington.svg" />
               <img src="./assets/imgs/team/cornell.svg" />
               <img src="./assets/imgs/team/wisconsin.svg" />
-            </div>
-          </div>
-
-          <div class="team-logos mobile">
-            <div class="logo-row">
-              <img src="./assets/imgs/team/google.svg" />
-              <img src="./assets/imgs/team/microsoft.svg" />
-              <img src="./assets/imgs/team/ibm.svg" />
-            </div>
-            <div class="logo-row">
-              <img src="./assets/imgs/team/pennn-state.svg" />
-              <img src="./assets/imgs/team/paloalto.svg" />
-              <div class="team-logo team-logo-illinois"></div>
-            </div>
-            <div class="logo-row">
-              <div class="team-logo team-logo-fireeye"></div>
-              <div class="team-logo team-logo-bytedance"></div>
-              <img src="./assets/imgs/team/algorand.png" />
-            </div>
-            <div class="logo-row">
-              <img src="./assets/imgs/team/standford.svg" />
-              <img src="./assets/imgs/team/vmware.svg" />
-              <img src="./assets/imgs/team/cornell.svg" />
-            </div>
-            <div class="logo-row logo-row-left">
-              <div class="team-logo team-logo-jpmorgan"></div>
-              <img src="./assets/imgs/team/washington.svg" />
-            </div>
-            <div class="logo-row">
-              <img src="./assets/imgs/team/wisconsin.svg" />
-            </div>
-          </div>
-
-          <div class="investors" id="investors">
-            <div class="investors-title h3" data-i18n="investors"></div>
-            <div class="investors-logos">
-              <!-- <div class="investors-logo investors-log-aigorand"></div> -->
-              <div class="investors-logo investors-log-eth"></div>
-              <div class="investors-logo investors-log-w3f"></div>
-              <div class="investors-logo investors-log-polkadot"></div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="investors" id="investors">
+        <div class="investors-title h3" data-i18n="investors"></div>
+        <div class="investors-logos">
+          <!-- <div class="investors-logo investors-log-aigorand"></div> -->
+          <div class="investors-logo investors-log-eth"></div>
+          <div class="investors-logo investors-log-w3f"></div>
+          <div class="investors-logo investors-log-polkadot"></div>
+        </div>
+      </div>
     </div>
+
     <!-- foot -->
-    <footer class="foot pc">
+    <footer class="foot">
       <div class="foot-main row">
         <div class="foot-left">
           <div class="foot-logo">
@@ -238,27 +180,10 @@
         <div class="copyright-right">2022 all rights reserved</div>
       </div>
     </footer>
-    <footer class="foot mobile">
-      <div class="resource">
-        <div class="foot-title" data-i18n="resource"></div>
-        <div class="resource-list">
-          <a class="resource-item resource-item-twitter" href="https://twitter.com/cleanini" target="_blank">Twitter</a>
-          <a class="resource-item resource-item-telegram" href="https://t.me/metaSecure" target="_blank">Telegram</a>
-          <a class="resource-item resource-item-mail" href="mailto:info@metasecurelabs.io" target="_blank">Email</a>
-        </div>
-      </div>
-      <div class="copyright">
-        Copyright 2022  © all rights reserved
-      </div>
-    </footer>
   </div>
   <script src="./assets/utils/rem.js"></script>
-  <script src="./assets/vendor/iSlider.js"></script>
-  <script src="./assets/vendor/iSlider.animate.js"></script>
-  <script src="./assets/vendor/iSlider.plugin.button.js"></script>
-  <script src="./assets/vendor/iSlider.plugin.dot.js"></script>
-  <script src="./assets/i18n/en.js?v=221013"></script>
-  <script src="./assets/i18n/zh.js?v=221013"></script>
-  <script src="./assets/index.js?v=2210013"></script>
+  <script src="./assets/i18n/en.js?v=221008"></script>
+  <script src="./assets/i18n/zh.js?v=221008"></script>
+  <script src="./assets/index.js?v=221008"></script>
 </body>
 </html>

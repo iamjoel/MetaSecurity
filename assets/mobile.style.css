@@ -1,0 +1,435 @@
+body {
+  min-width: auto;
+  font-size: .16rem;
+}
+
+.pc {
+  display: none;
+}
+
+.row {
+  width: 100%;
+}
+
+.header-wrap {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: #fff;
+}
+
+.head {
+  height: .4rem;
+  padding: 0 .19rem 0 .16rem;
+}
+
+.logo {
+  padding-left: .2rem;
+  background-size: .14rem .32rem;
+}
+
+.name {
+  width: .7rem;
+  height: .08rem;
+}
+
+.lang {
+  margin-right: .18rem;
+  width: .25rem;
+  height: .25rem;
+  font-size: .15rem;
+  /* 处理框太小，最终字体会小于12px */
+  transform: scale(.5); 
+}
+
+.menu-handle {
+  width: .13rem;
+  height: .11rem;
+  background: url(./imgs/mobile/handle.svg) center center no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.unfold .menu-handle {
+  background-image: url(./imgs/mobile/handle-close.svg);
+}
+
+.mobile-menu-list {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  top: .4rem;
+  left: 0;
+  width: 100%;
+  padding-top: .15rem;
+  height: calc(100vh - .4rem);
+  background-color: #fff;
+  font-size: .12rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.unfold .mobile-menu-list {
+  display: block;
+}
+
+.mobile-menu-item,
+.mobile-sub-menu-item,
+.mobile-menu-text {
+  display: block;
+  line-height: .33rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+.mobile-menu-item-has-sub,
+.mobile-sub-menu-item-last {
+  border-bottom: none;
+}
+
+
+.mobile-menu-item {
+  margin: 0 auto;
+  width: 2.88rem;
+}
+
+.mobile-sub-menu {
+  display: none;
+  margin-left: .16rem;
+}
+
+.mobile-menu-item-has-sub.unfold .mobile-sub-menu {
+  display: block;
+}
+
+.mobile-menu-item-has-sub .mobile-menu-text {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu-item-has-sub .mobile-menu-text::after{
+  content: '';
+  margin-left: .08rem;
+  display: block;
+  width: .12rem;
+  height: .12rem;
+  background: url(./imgs/mobile/arrow-up.svg) center center no-repeat;
+  background-size: .07rem .04rem;
+  transform: rotate(180deg);
+}
+
+.mobile-menu-item-has-sub.unfold .mobile-menu-text::after{
+  transform: rotate(0);
+}
+/* Home */
+.home {
+  height: auto;
+}
+
+.home-main {
+  display: block;
+  height: 4rem;
+  padding-top: .7rem;
+}
+
+.summary {
+  text-align: center;
+}
+
+.title {
+  margin: 0 auto .16rem;
+  width: 1.76rem;
+  height: .2rem;
+}
+
+.sub-title {
+  font-size: .12rem;
+  line-height: .17rem;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-anim {
+  position: static;
+  margin: 0 auto 0;
+  width: 2.4rem;
+  height: 2.64rem;
+}
+
+/* Product */
+.product {
+  padding: .42rem .16rem 0;
+  background-size: contain;
+  background-size: 1rem 6.6rem;
+  background-position-y: -1.3rem;
+}
+
+.product-title {
+  margin-bottom: .06rem;
+  font-size: .14rem;
+  line-height: .2rem;
+}
+
+.product-des {
+  margin-bottom: .32rem;
+  font-size: .12rem;
+  line-height: .14rem;
+}
+
+.product-img {
+  height: 1.22rem;
+}
+
+
+
+/* 轮播start */
+.product-feature-viewport-wrap {
+  margin-top: .32rem;
+  position: relative;
+}
+
+.product-feature-viewport {
+  /* overflow: hidden; */
+  height: 2.1rem;
+  position: relative;
+}
+
+.islider-btn-outer {
+  top: .48rem;
+  bottom: auto;
+  width: .2rem;
+  height: .2rem;
+  background: center center no-repeat;
+  background-size: contain;
+}
+
+.islider-btn-outer > .islider-btn-inner {
+  border: none;
+}
+  
+.islider-btn-outer.left {
+  left: 0;
+  background-image: url(./imgs/mobile/arrow-left.svg);
+}
+
+.islider-btn-outer.right {
+  right: 0;
+  background-image: url(./imgs/mobile/arrow-right.svg);
+}
+
+.islider-dot-wrap {
+  bottom: .55rem;
+}
+
+.islider-dot {
+  margin: 0 .16rem 0 0;
+  width: .1rem;
+  height: .1rem;
+  background-color: rgba(16, 46, 69, 0.3);
+  border: none;
+}
+
+.islider-dot:last-child {
+  margin-right: 0;
+}
+
+.islider-dot.active {
+  background-color: #102E45;
+}
+
+/* 轮播end */
+.product-feature-wrap {
+  padding-bottom: 0;
+  background: none;
+}
+
+.product-feature {
+  margin-top: .32rem;
+  width: 9.6rem;
+}
+
+.product-feature-item {
+  margin-right: .32rem;
+  width: 2.88rem;
+  padding-top: 1.54rem;
+  background-size: 1.32rem 1.16rem;
+}
+
+.product-feature-item:last-child {
+  margin-right: 0;
+}
+
+.feature-h1 {
+  margin-bottom: .04rem;
+  font-size: .13rem;
+  line-height: .17rem;
+}
+
+.feature-h2 {
+  font-size: .12rem;
+  line-height: .15rem;
+}
+
+/* team */
+.team {
+  margin-top: .64rem;
+}
+
+.about-us {
+  width: 2.88rem;
+  margin: 0 auto;
+  padding: .27rem .18rem .37rem .18rem;
+  border-radius: .16rem;
+}
+
+.about-us-title {
+  margin-bottom: .18rem;
+  font-size: .14rem;
+  line-height: .2rem;
+}
+
+.about-us-summary {
+  font-size: .12rem;
+  line-height: .14rem;
+}
+
+.about-us-summary::before,
+.about-us-summary::after {
+  display: none;
+}
+
+.about-us-content {
+  margin-top: .06rem;
+  font-size: .12rem;
+  line-height: .15rem;
+}
+
+.team-background-wrap::before {
+  display: none;
+}
+
+.team-background {
+  margin-top: .64rem;
+  width: 100%;
+  padding: 0 .16rem;
+}
+
+.team-title {
+  margin-bottom: .06rem;
+}
+
+.h3 {
+  font-size: .14rem;
+  line-height: .2rem;
+}
+
+.team-des {
+  margin-bottom: .2rem;
+  font-size: .12rem;
+  line-height: .14rem;
+}
+
+.logo-row {
+  padding-right: .18rem;
+  margin-bottom: .09rem;
+}
+
+.logo-row img, .team-logo{
+  height: .34rem;
+}
+
+.team-logo {
+  border-radius: 3.2px;
+}
+
+.team-logo-illinois {
+  width: .7rem;
+  background-size: .59rem .15rem;
+}
+
+.team-logo-fireeye {
+  width: .85rem;
+  background-size: .68rem .25rem;
+}
+
+.team-logo-bytedance {
+  width: .98rem;
+  background-size: .85rem .15rem;
+}
+
+.team-logo-jpmorgan {
+  width: 1.21rem;
+  background-size: 1.14rem .21rem;
+}
+
+.logo-row-left {
+  justify-content: flex-start;
+}
+
+.logo-row-left .team-logo:first-child {
+  margin-right: .09rem;
+}
+
+.investors {
+  margin-top: .64rem;
+  margin-bottom: .64rem;
+  width: 100%;
+}
+
+.investors-title {
+  margin-bottom: .2rem;
+}
+
+.investors-logo {
+  width: .91rem;
+  height: .28rem;
+  border-radius: 4px;
+}
+
+.investors-log-eth {
+  background-size: .8rem .17rem;
+}
+
+.investors-log-w3f {
+  background-size: .54rem .2rem;
+}
+
+.investors-log-polkadot {
+  background-size: .67rem .2rem;
+}
+
+/* Foot */
+.resource {
+  padding: .2rem 0 .28rem .16rem;
+}
+
+.foot-title {
+  margin-top: 0;
+  font-size: .14rem;
+  line-height: .17rem;
+  color: #FFFFFF;
+}
+
+.resource-list {
+  margin-top: .16rem;
+  justify-content: flex-start;
+}
+
+.resource-item {
+  margin-right: .2rem;
+  padding-left: .18rem;
+  font-size: .12rem;
+  line-height: .14rem;
+}
+
+.resource-item-twitter,
+.resource-item-telegram,
+.resource-item-mail {
+  background-size: .12rem .12rem;
+}
+
+.copyright {
+  height: .2rem;
+  line-height: .2rem;
+  font-size: .12rem;
+}

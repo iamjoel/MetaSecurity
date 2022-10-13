@@ -16,7 +16,7 @@ window.en = {
   feature2Des: 'Output all detection results, including vulnerability code localization',
   feature3Title: 'Complete detection capability',
   feature3Des: 'Cover most of the smart contract SWC vulnerabilities',
-  aboutUsSummary: 'MetaSecureLabs.io is formed by a top-notch team with wide background including crypto, cyber-security, economics, finance&risk control, cloud software architect, and solution architect veterans.',
+  aboutUsSummary: 'MetaSecure: Help the Web3 developer communities build more secure Dapp and Web3 infrastrcutre.',
   aboutUsDetail: 'Based on the concept of continuous security threat and risk assessment (CARTA), it focuses on providing data-driven security, trust measurement service, and security consulting for web3 projects, namely Trustworthy as a Service (TaaS). We provide continuous and accurate security threat and risk assessment mechanisms in different building level and use scenarios (e.g.,Smart contract, NFT, Protocol, Infrastructure of web3 systems and projects) . We believe that a trustworthy understanding of project semantic (code logic), data flows (e.g., token txn) and the tokenomic incentive models are the key to help build a true valuable world of stable and secure web3 systems.',
   teamBackgroundDes: 'MetaSecureLabs.io: a team from reputable Research Institute, Security Vendors and Web2 Companies',
   language: 'Language',
