@@ -4,7 +4,7 @@ body {
 }
 
 .pc {
-  display: none;
+  display: none !important;
 }
 
 .row {
@@ -124,6 +124,7 @@ body {
 /* Home */
 .home {
   height: auto;
+  padding-bottom: .24rem;
 }
 
 .home-main {
@@ -147,6 +148,7 @@ body {
   line-height: .17rem;
   display: flex;
   justify-content: center;
+
 }
 
 .logo-anim {
@@ -154,6 +156,18 @@ body {
   margin: 0 auto 0;
   width: 2.4rem;
   height: 2.64rem;
+}
+
+.resource-list-summary {
+  margin: 0 auto;
+  width: 2.4rem;
+  justify-content: space-between;
+  opacity: .85;
+}
+
+.resource-item-summary {
+  margin-right: 0;
+  font-size: .12rem;
 }
 
 /* Product */
@@ -165,22 +179,23 @@ body {
 }
 
 .product-title {
+  width: 100%;
   margin-bottom: .06rem;
   font-size: .14rem;
   line-height: .2rem;
 }
 
 .product-des {
+  width: 100%;
   margin-bottom: .32rem;
   font-size: .12rem;
   line-height: .14rem;
 }
 
 .product-img {
-  height: 1.22rem;
+  width: 100%;
+  height: auto;
 }
-
-
 
 /* 轮播start */
 .product-feature-viewport-wrap {
@@ -275,33 +290,58 @@ body {
   margin-top: .64rem;
 }
 
-.about-us {
+.our-mission {
   width: 2.88rem;
   margin: 0 auto;
   padding: .27rem .18rem .37rem .18rem;
   border-radius: .16rem;
 }
 
-.about-us-title {
+.our-mission-title {
   margin-bottom: .18rem;
   font-size: .14rem;
   line-height: .2rem;
 }
 
-.about-us-summary {
+.our-mission-summary {
   font-size: .12rem;
   line-height: .14rem;
 }
 
-.about-us-summary::before,
-.about-us-summary::after {
+.our-mission-summary::before,
+.our-mission-summary::after {
   display: none;
 }
 
-.about-us-content {
+.our-mission-content {
   margin-top: .06rem;
   font-size: .12rem;
   line-height: .15rem;
+}
+
+.mission-list {
+  width: 2.88rem;
+  flex-wrap: wrap;
+  margin-top: .26rem;
+}
+
+.mission-item {
+  margin-bottom: .16rem;
+  width: 1.38rem;
+}
+
+.mission-item-title {
+  padding: 1.11rem 0 .12rem 0;
+  border-radius: .1rem;
+  font-size: .13rem;
+  background-position-y: .17rem;
+  background-size: .72rem .82rem;
+}
+
+.mission-item-content {
+  margin-top: .11rem;
+  font-size: .12rem;
+  line-height: .14rem;
 }
 
 .team-background-wrap::before {
@@ -362,17 +402,23 @@ body {
   background-size: 1.14rem .21rem;
 }
 
+.team-logo-ftx {
+  width: 1.1rem;
+  background-size: .91rem .21rem;
+}
+
 .logo-row-left {
   justify-content: flex-start;
 }
 
-.logo-row-left .team-logo:first-child {
+.logo-row-left .team-logo:first-child,
+.logo-row-left img:first-child {
   margin-right: .09rem;
 }
 
 .investors {
   margin-top: .64rem;
-  margin-bottom: .64rem;
+  margin-bottom: .38rem;
   width: 100%;
 }
 
@@ -381,6 +427,8 @@ body {
 }
 
 .investors-logo {
+  margin-bottom: .08rem;
+  margin-right: .07rem;
   width: .91rem;
   height: .28rem;
   border-radius: 4px;
@@ -390,12 +438,36 @@ body {
   background-size: .8rem .17rem;
 }
 
+.investors-log-algorand {
+  background-size: .56rem .2rem;
+}
+
 .investors-log-w3f {
   background-size: .54rem .2rem;
 }
 
 .investors-log-polkadot {
   background-size: .67rem .2rem;
+}
+
+.investors-log-aptos {
+  background-size: .74rem .2rem;
+}
+
+.investors-log-solana {
+  background-size: .86rem .22rem;
+}
+
+.investors-log-zksync {
+  background-size: .82rem .23rem;
+}
+
+.investors-log-parity {
+  background-size: .68rem .19rem;
+}
+
+.investors-log-go-eth {
+  background-size: .75rem .17rem;
 }
 
 /* Foot */
@@ -425,7 +497,7 @@ body {
 .resource-item-twitter,
 .resource-item-telegram,
 .resource-item-mail {
-  background-size: .12rem .12rem;
+  background-size: .1rem .08rem;
 }
 
 .copyright {

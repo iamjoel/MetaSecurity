@@ -11,13 +11,13 @@
     const navDoms = {
       'home': document.getElementById('home'),
       'product': document.getElementById('product'),
-      'about-us': document.getElementById('about-us'),
+      'our-mission': document.getElementById('our-mission'),
       'team-background': document.getElementById('team-background'),
       'investors': document.getElementById('investors'),
     }
   
     const offset = {
-      'about-us': -150,
+      'our-mission': -150,
       'team-background': -150,
       'investors': -150,
     }
