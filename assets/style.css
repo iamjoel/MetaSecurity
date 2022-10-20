@@ -351,15 +351,15 @@ video {
 }
 
 .upload-code {
-  background-image: url(./imgs/feature/1.png);
+  background-image: url(./imgs/feature/1.webp);
 }
 
 .analysis-reports {
-  background-image: url(./imgs/feature/2.png);
+  background-image: url(./imgs/feature/2.webp);
 }
 
 .detection-capability {
-  background-image: url(./imgs/feature/3.png);
+  background-image: url(./imgs/feature/3.webp);
 }
 
 .feature-h1 {
@@ -585,7 +585,7 @@ video {
 }
 
 .investors-log-w3f {
-  background-image: url(./imgs/investor/w3f.png);
+  background-image: url(./imgs/investor/w3f.webp);
   background-size: 180px 70px;
 }
 
@@ -626,7 +626,7 @@ video {
 
 .team-logo-ftx {
   width:  236px;
-  background-image: url(./imgs/team/ftx.png) ; 
+  background-image: url(./imgs/team/ftx.webp) ; 
   background-size: 216px 50px;
 }
 
