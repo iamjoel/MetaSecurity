@@ -31,17 +31,17 @@ video {
 
 @font-face {
   font-family: aliPH;
-  src: url(./font/Alibaba-PuHuiTi-Regular.woff2) format("woff2"), url("./font/Alibaba-PuHuiTi-Regular.ttf");
+  src: url(./font/Alibaba-PuHuiTi-Regular.woff2) format("woff2"), url("./font/Alibaba-PuHuiTi-Regular.woff2");
 }
 
 @font-face {
   font-family: aliPHBold;
-  src: url(./font/Alibaba-PuHuiTi-Medium.woff2) format("woff2"),url("./font/Alibaba-PuHuiTi-Medium.ttf");
+  src: url(./font/Alibaba-PuHuiTi-Medium.woff2) format("woff2"),url("./font/Alibaba-PuHuiTi-Medium.woff2");
 }
 
 @font-face {
   font-family: aliPHLight;
-  src: url(./font/Alibaba-PuHuiTi-Light.ttf) format("woff2"),url("./font/Alibaba-PuHuiTi-Medium.ttf");
+  src: url(./font/Alibaba-PuHuiTi-Light.woff2) format("woff2"),url("./font/Alibaba-PuHuiTi-Medium.woff2");
 }
 
 .row {
